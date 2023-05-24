@@ -4,6 +4,7 @@ let
   hpkgs = pkgs.haskellPackages.override ({
     overrides = hfinal: hprevious:
       with hfinal; {
+        haskell-ical = callCabal2nix "haskell-ical" inputs.haskell-ical { };
         haskell-devenv = callCabal2nix "haskell-devenv" inputs.self { };
       };
   });

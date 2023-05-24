@@ -1,0 +1,40 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           haskell-devenv
+version:        0.1
+author:         Providence Salumu
+maintainer:     Providence.Salumu@smunix.com
+build-type:     Simple
+
+library
+  exposed-modules:
+      Lib.Top
+  other-modules:
+      Paths_haskell_devenv
+  hs-source-dirs:
+      lib
+  default-extensions:
+      GHC2021
+  build-depends:
+      base
+    , haskell-ical
+  default-language: Haskell2010
+
+executable App
+  main-is: Top.hs
+  other-modules:
+      Paths_haskell_devenv
+  hs-source-dirs:
+      exe
+  default-extensions:
+      GHC2021
+  ghc-options: -main-is Top
+  build-depends:
+      base
+    , haskell-devenv
+    , haskell-ical
+  default-language: Haskell2010

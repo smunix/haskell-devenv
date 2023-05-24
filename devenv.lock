@@ -69,6 +69,22 @@
         "type": "github"
       }
     },
+    "haskell-ical": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1457060611,
+        "narHash": "sha256-9S3uySy1NgkYRUmRzJxG27f66p+tsmPQAyUYhsBZYHE=",
+        "owner": "kofno",
+        "repo": "haskell-ical",
+        "rev": "ef2c92a184ebe7fef781822751b27431e96a588a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kofno",
+        "repo": "haskell-ical",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1684911969,
@@ -128,6 +144,7 @@
     "root": {
       "inputs": {
         "devenv": "devenv",
+        "haskell-ical": "haskell-ical",
         "nixpkgs": "nixpkgs",
         "pre-commit-hooks": "pre-commit-hooks"
       }

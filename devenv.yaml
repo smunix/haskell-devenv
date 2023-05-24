@@ -1,3 +1,6 @@
 inputs:
   nixpkgs:
     url: github:NixOS/nixpkgs/nixpkgs-unstable
+  haskell-ical:
+    url: github:kofno/haskell-ical
+    flake: false
