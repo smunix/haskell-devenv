@@ -1,0 +1,20 @@
+name: haskell-devenv
+version: 0.1
+author: Providence Salumu
+maintainer: Providence.Salumu@smunix.com
+
+default-extensions:
+  - GHC2021
+
+dependencies:
+  - base
+
+library:
+  source-dirs: lib
+
+executables:
+  App:
+    source-dirs: exe
+    main: Top
+    dependencies:
+      - haskell-devenv
